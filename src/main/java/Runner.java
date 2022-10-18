@@ -16,6 +16,7 @@ public class Runner {
 
         //Imprimindo os valores de retorno
         System.out.println(value);
+        System.out.println(value);
         System.out.println(secondValue);
         System.out.println(thirdClass.setClassName("Third"));
     }
