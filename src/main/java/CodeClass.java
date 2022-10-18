@@ -10,7 +10,6 @@ public class CodeClass {
 
     public void setQtdStudents(String qtdStudents) {
         this.qtdStudents = qtdStudents;
-        this.className = "";
     }
 
 }
