@@ -57,7 +57,6 @@ public class TestCase {
         WebElement message = driver.findElement(By.cssSelector("#authportal-main-section > div:nth-child(2) > div > div.a-section > form > div > div > div > h1"));
 
         return message.getText();
-
     }
 
 

@@ -1,4 +1,4 @@
-package Selenium;
+package selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,7 +15,7 @@ public class SeleniumClass {
                 "/Users/williamsoares/Documents/Selenium/chromedriver");
 
         ChromeDriver driver = new ChromeDriver();
-        driver.get("https://www.gov.br/pt-br");
+//        driver.get("https://www.gov.br/pt-br");
         driver.manage().window().maximize();
 
         WebElement searchInput = driver.findElement(By.id("searchtext-input"));
