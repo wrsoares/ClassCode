@@ -1,0 +1,13 @@
+Eu como cidadão brasileiro
+Quero acessar acessar o site do TSE
+E acessar os resultados da eleição presidencial
+Para que eu possa acessar a votação
+E validar quem será o presidente
+
+
+Nome: Validar que o presidente eleito foi o candidato X
+Passo 1: acessar o site do TSE
+Passo 2: selecionar eleições 2022
+Passo 3: selecionar divulgação dos resultados das eleições 2022
+Passo 4: selecionar a opção de resultados resumidos
+Passo 5: validar o candidato
