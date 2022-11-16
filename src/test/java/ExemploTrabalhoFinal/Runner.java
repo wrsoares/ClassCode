@@ -14,6 +14,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class Runner {
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 
         driver = new ChromeDriver(options);
-        driver.get("https://www.tse.jus.br/");
+        driver.get("https://123milhas.com/hotel");
     }
     @AfterMethod
     public void tearDown() {
@@ -93,6 +94,21 @@ public class Runner {
         resultsPO.validatePage();
         resultsPO.validateTestPercentVotes();
         resultsPO.validateTestQuantityVotes();
+    }
+
+    @Test
+    public void test() throws InterruptedException {
+        Thread.sleep(5000);
+        WebElement element = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div[2]/form/div/div[2]/div[1]/div[2]/div[1]/input"));
+        element.click();
+        element.sendKeys("Garopaba");
+        Thread.sleep(10000);
+    }
+
+
+    @Test
+    public void testName() {
+        //Your code test here
     }
 
 }

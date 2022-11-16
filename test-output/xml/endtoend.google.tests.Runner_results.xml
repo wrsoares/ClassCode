@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CodeClass"
+           tests="6"
+           failures="3"
+           errors="0"
+           skipped="0"
+           time="55.865">
+    <properties></properties>
+
+            <testcase
+                name="test_search_btn_lucky"
+                time="12.988"
+                classname="endtoend.google.tests.Runner">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.name: body &gt; div.L3eUgb &gt; div.o3j99.ikrT4e.om7nvf &gt; form &gt; div:nth-child(1) &gt; div.A8SBwf &gt; div.FPdoLc.lJ9FBc &gt; center &gt; input.RNmpXc (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Williams-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:f6:240a:40d9:d9a6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/9x/4jffv27n5l3...}, goog:chromeOptions: {debuggerAddress: localhost:59576}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59576/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28c03d7d40d5731dd09aa28b23a9aeb6">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.RNmpXc (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Williams-MacBook-Pro.local', ip: 'fe80:0:0:0:f6:240a:40d9:d9a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/9x/4jffv27n5l3...}, goog:chromeOptions: {debuggerAddress: localhost:59576}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59576/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28c03d7d40d5731dd09aa28b23a9aeb6
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)Utils.Utils.getElement(Utils.java:19)Utils.Utils.elementClick(Utils.java:24)endtoend.google.pageobjects.GooglePO.btnLucky(GooglePO.java:30)endtoend.google.pageobjects.GooglePO.searchButtonLucky(GooglePO.java:50)endtoend.google.tests.Runner.test_search_btn_lucky(Runner.java:36)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:568)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="test_search_btn_search"
+                time="3.934"
+                classname="endtoend.google.tests.Runner">
+
+            <failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;input class=&quot;gNO89b&quot; value=&quot;Pesquisa Google&quot; aria-label=&quot;Pesquisa Google&quot; name=&quot;btnK&quot; role=&quot;button&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; data-ved=&quot;0ahUKEwiyh8y1hq_7AhWlF7kGHfweBY4Q4dUDCA0&quot;&gt; is not clickable at point (646, 370). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
+  (Session info: chrome=107.0.5304.110)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Williams-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:f6:240a:40d9:d9a6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5b48a3c47ee91cb087cebd83a91093f, clickElement {id=6796f55a-54f4-4713-bde9-81166a200986}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/9x/4jffv27n5l3...}, goog:chromeOptions: {debuggerAddress: localhost:59608}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59608/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (b5b48a3c47ee91cb087cebd83a91093f)] -&gt; css selector: body &gt; div.L3eUgb &gt; div.o3j99.ikrT4e.om7nvf &gt; form &gt; div:nth-child(1) &gt; div.A8SBwf &gt; div.FPdoLc.lJ9FBc &gt; center &gt; input.gNO89b]
+Session ID: b5b48a3c47ee91cb087cebd83a91093f">
+                <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class="gNO89b" value="Pesquisa Google" aria-label="Pesquisa Google" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwiyh8y1hq_7AhWlF7kGHfweBY4Q4dUDCA0"> is not clickable at point (646, 370). Other element would receive the click: <span>...</span>
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Williams-MacBook-Pro.local', ip: 'fe80:0:0:0:f6:240a:40d9:d9a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5b48a3c47ee91cb087cebd83a91093f, clickElement {id=6796f55a-54f4-4713-bde9-81166a200986}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/9x/4jffv27n5l3...}, goog:chromeOptions: {debuggerAddress: localhost:59608}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59608/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (b5b48a3c47ee91cb087cebd83a91093f)] -> css selector: body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.gNO89b]
+Session ID: b5b48a3c47ee91cb087cebd83a91093f
+                java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)Utils.Utils.elementClick(Utils.java:25)endtoend.google.pageobjects.GooglePO.btnSearch(GooglePO.java:26)endtoend.google.pageobjects.GooglePO.searchButtonSearch(GooglePO.java:44)endtoend.google.tests.Runner.test_search_btn_search(Runner.java:31)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:568)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="search_without_value_btn_lucky"
+                time="12.285"
+                classname="endtoend.google.tests.Runner">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.name: body &gt; div.L3eUgb &gt; div.o3j99.ikrT4e.om7nvf &gt; form &gt; div:nth-child(1) &gt; div.A8SBwf &gt; div.FPdoLc.lJ9FBc &gt; center &gt; input.RNmpXc (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Williams-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:f6:240a:40d9:d9a6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/9x/4jffv27n5l3...}, goog:chromeOptions: {debuggerAddress: localhost:59547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6755e10b446641f2276288c47295f6b5">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.RNmpXc (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Williams-MacBook-Pro.local', ip: 'fe80:0:0:0:f6:240a:40d9:d9a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/9x/4jffv27n5l3...}, goog:chromeOptions: {debuggerAddress: localhost:59547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6755e10b446641f2276288c47295f6b5
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)Utils.Utils.getElement(Utils.java:19)Utils.Utils.elementClick(Utils.java:24)endtoend.google.pageobjects.GooglePO.btnLucky(GooglePO.java:30)endtoend.google.pageobjects.GooglePO.searchWithoutValueLucky(GooglePO.java:65)endtoend.google.tests.Runner.search_without_value_btn_lucky(Runner.java:51)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:568)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </failure>
+    </testcase>
+
+
+            <testcase
+                name="search_without_value"
+                time="1.992"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+            <testcase
+                name="test_search_enter"
+                time="7.266"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+            <testcase
+                name="search_url"
+                time="17.400"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+</testsuite>

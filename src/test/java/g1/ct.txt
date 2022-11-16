@@ -1,0 +1,31 @@
+
+Caso de teste: validar acesso a página inicial referente ao CE
+
+1 - Acessar a home do G1
+2 - Clicar no Menu
+3 - Clicar na opção "Regiões"
+4 - Clicar na opção "Nordeste"
+5 - Clicar na opção "Ceará"
+6 - Clicar na opção "Primeira página"
+Resultado esperado: Deve ser a home referente ao estado do Ceará
+
+Caso de teste: validar acesso a página do NE Rural do CE
+
+1 - Acessar a home do G1
+2 - Clicar no Menu
+3 - Clicar na opção "Regiões"
+4 - Clicar na opção "Nordeste"
+5 - Clicar na opção "Ceará"
+6 - Clicar na opção "ne rural"
+Resultado esperado: Deve ser a home referente ao ao NE Rural CE
+
+Caso de teste: validar acesso a página do Bom dia CE
+
+1 - Acessar a home do G1
+2 - Clicar no Menu
+3 - Clicar na opção "Regiões"
+4 - Clicar na opção "Nordeste"
+5 - Clicar na opção "Ceará"
+6 - Clicar na opção "bom dia ce"
+
+Resultado esperado: Deve ser a home referente ao Bom Dia ce

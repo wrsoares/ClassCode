@@ -1,0 +1,12 @@
+Funcionalidade: Busca no Google
+
+Eu como usuário da WEB
+Quero efetuar uma busca no Google
+Para que eu possa desenvolver minhas automações
+
+CT01: efetuar busca usando por meio do botão de busca
+CT02: efetuar busca usando por meio do botão "estou com sorte"
+CT03: efetuar busca com enter
+CT04: efetuar busca sem inserir valor
+CT05: efetuar busca sem inserir valor por meio do botão "estou com sorte"
+CT06: efetuar busca por meio da URL
