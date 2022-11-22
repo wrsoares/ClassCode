@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.742">
+           time="26.147">
     <properties></properties>
 
 
 
             <testcase
-                name="TESTNAME"
-                time="21.742"
-                classname="endtoend.google.tests.Runner">
+                name="test_frame"
+                time="26.147"
+                classname="interactions.Interactions">
             </testcase>
 </testsuite>

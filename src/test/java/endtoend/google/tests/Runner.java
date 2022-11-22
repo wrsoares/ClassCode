@@ -1,11 +1,14 @@
 package endtoend.google.tests;
 
 import endtoend.google.pageobjects.GooglePO;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import static Utils.Utils.getElement;
 
 public class Runner {
 
@@ -17,7 +20,7 @@ public class Runner {
                 "/Users/williamsoares/Documents/Selenium/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.google.com");
+        driver.get("https://www.airbnb.com/s/Casa-Verde--São-Paulo-~-SP/homes?place_id=ChIJa_LVxuX3zpQRIzQP5XFnajc&refinement_paths%5B%5D=%2Fhomes&checkin=2023-01-01&checkout=2023-01-31&date_picker_type=calendar&adults=2&children=0&infants=0&pets=2&search_type=AUTOSUGGEST");
     }
 
     @AfterMethod
@@ -54,6 +57,12 @@ public class Runner {
     public void search_url() {
         GooglePO googlePO = new GooglePO(driver);
         googlePO.searchUrl("Selenium");
+    }
+
+    @Test(testName = "TESTNAME")
+    public void TESTNAME() {
+        System.out.println(getElement(driver, By.cssSelector("#site-content > div.m1fb5rsd.dir.dir-ltr")).isDisplayed());
+        System.out.println(getElement(driver, By.cssSelector("#site-content > div.fhusglq.dir.dir-ltr > div.p1lc3mon.dir.dir-ltr > div > div > div > div > section > h1 > span")).isDisplayed());
     }
 
 }

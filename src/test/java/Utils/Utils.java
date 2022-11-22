@@ -11,7 +11,7 @@ public class Utils {
 
     public static void scrollPage(WebDriver driver, String pixels) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollBy(0,"+ pixels +")");
+        executor.executeScript("window.scrollBy(0," + pixels + ")");
     }
 
     public static WebElement getElement(WebDriver driver, By by) {
@@ -42,6 +42,9 @@ public class Utils {
         element.click();
         element.clear();
         element.sendKeys(text, key);
+    }
+    public static void refreshPage(WebDriver driver) {
+        driver.navigate().refresh();
     }
 
 }
