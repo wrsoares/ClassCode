@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="26.147">
+           time="39.230">
     <properties></properties>
 
 
 
             <testcase
-                name="test_frame"
-                time="26.147"
+                name="test_interactions"
+                time="39.230"
                 classname="interactions.Interactions">
             </testcase>
 </testsuite>

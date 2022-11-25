@@ -1,10 +1,7 @@
 package interactions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -27,19 +24,20 @@ public class Interactions {
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(320, 800));
     }
 
     @Test(testName = "Example test interactions")
     public void test_interactions() throws InterruptedException {
 //        driver.get("https://ge.globo.com/futebol/selecao-brasileira/");
         driver.navigate().to("https://ge.globo.com/");
-        Thread.sleep(1000);
-        driver.navigate().to("https://ge.globo.com/futebol/selecao-brasileira/");
-        Thread.sleep(1000);
-        driver.navigate().back();
-        Thread.sleep(1000);
-        driver.navigate().forward();
-        refreshPage(driver);
+        Thread.sleep(10000);
+//        driver.navigate().to("https://ge.globo.com/futebol/selecao-brasileira/");
+//        Thread.sleep(1000);
+//        driver.navigate().back();
+//        Thread.sleep(1000);
+//        driver.navigate().forward();
+//        refreshPage(driver);
     }
 
     @Test(testName = "Example test alerts")
@@ -69,8 +67,11 @@ public class Interactions {
     }
 
     @Test(testName = "window")
-    public void TESTNAME() {
-
+    public void TESTNAME() throws InterruptedException {
+        driver.get("https://www.gov.br/receitafederal/pt-br");
+        Thread.sleep(1000);
+        elementClick(driver, By.id("site-header"));
+        Thread.sleep(5000);
     }
 
 }
